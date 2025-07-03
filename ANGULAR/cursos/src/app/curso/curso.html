@@ -1,0 +1,13 @@
+<section>
+    <h2 class="title" >CURSOS</h2>
+    <div>
+        <div *ngFor="let curso of cursos" class="curso-item">
+            <h3>{{curso.nombre}}</h3>
+            <small>Nivel: {{curso.nivel}}</small>
+            <p>{{curso.descripcion}}</p>
+            <span>{{curso.precio}}</span>
+            <br>
+            <button style="background-color: rgb(224, 228, 102);" (click)="verDetalleCurso(curso.id)">Ver Tabla de Contenido</button>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,12 @@
+<section>
+    <div *ngIf="curso; else noEncontrado" class="curso-detalle">
+        <h2>{{curso.id}}</h2>
+        <h1>{{curso.nombre}}</h1>
+        <p>{{curso.descripcion}}</p>
+        <a routerLink="/cursos">Volver</a>
+    </div>
+
+    <ng-template #noEncontrado>
+        <p>Curso no encontrado</p>
+    </ng-template>
+</section>
